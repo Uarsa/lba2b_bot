@@ -1,7 +1,4 @@
-import requests
 import telebot
-from telebot import apihelper
-from telebot.types import Message
 
 
 bot = telebot.TeleBot("1174476779:AAE0zX3xf-ioir4agNdGiBHQFjObQZJBcqA")
