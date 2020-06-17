@@ -15,12 +15,14 @@ def handle_start(message):
         
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-        if type(message.text) == type(1):
-                i = int(message.text) * 562
-                bot.send_message(message.chat.id, i)
+        i = int(message.text) * 562
+        bot.send_message(message.chat.id, i)
+        
+        '''   
+        if type(message.text) == type(1):      
         else:
                 bot.send_message(message.chat.id, "Умею отвечать только на число!")
-                
+        '''        
         
         '''
          if message.text == 'пока' or message.text == 'Пока':
