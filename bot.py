@@ -15,8 +15,11 @@ def handle_start(message):
         
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-        i = int(message.text) * 562
-        bot.send_message(message.chat.id, i)       
+        try:
+                i = int(message.text) * 562
+                bot.send_message(message.chat.id, i)    
+        except:
+                bot.send_message(message.chat.id, "Умею отвечать только на число!")
             
         
         '''   
