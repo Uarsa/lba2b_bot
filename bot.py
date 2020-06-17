@@ -15,6 +15,9 @@ def handle_start(message):
 def handle_text(message):
          if message.text == 'пока' or message.text == 'Пока':
                 bot.send_message(message.chat.id, 'Успехов в новом году!')
+         else:
+                i = int(message.text) * 2
+                bot.send_message(message.chat.id, i)
         
         
 bot.polling(none_stop=True, interval=0)    
