@@ -17,7 +17,7 @@ def handle_start(message):
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
          if message.text == 'пока' or message.text == 'Пока':
-                bot.send_message(message.chat.id, 'Успехов в новом году!\nЗаходи ещё, позже у меня будет больше возможностей с:'))
+                bot.send_message(message.chat.id, 'Успехов в новом году!')
         
         
 bot.polling(none_stop=True, interval=0)    
