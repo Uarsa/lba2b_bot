@@ -16,7 +16,7 @@ def handle_text(message):
          if message.text == 'пока' or message.text == 'Пока':
                 bot.send_message(message.chat.id, 'Успехов в новом году!')
          else:
-                i = int(message.text) * 2
+                i = int(message.text) * 562.5
                 bot.send_message(message.chat.id, i)
         
         
