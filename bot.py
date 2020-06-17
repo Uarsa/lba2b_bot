@@ -19,7 +19,7 @@ def handle_text(message):
                 i = int(message.text) * 562
                 bot.send_message(message.chat.id, i)
         else:
-                echo_all(message)
+                bot.send_message(message.chat.id, "Умею отвечать только на число!")
                 
         
         '''
