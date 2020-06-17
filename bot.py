@@ -17,18 +17,10 @@ def handle_start(message):
 def handle_text(message):
         try:
                 b = int(message.text) * 0.0000004768371582
-                bot.send_message(message.chat.id, str(b) + " Gb")    
+                i = float("{0:.9f}".format(b))
+                bot.send_message(message.chat.id, str(i) + " GB")    
         except:
                 bot.send_message(message.chat.id, "Умею отвечать только на число блоков!")
-            
-        
-        '''   
-        if type(message.text) == type(1):      
-        else:
-                bot.send_message(message.chat.id, "Умею отвечать только на число!")
-        '''        
-        
-        
-        
+             
         
 bot.polling(none_stop=True, interval=0)    
