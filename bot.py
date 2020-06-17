@@ -15,7 +15,7 @@ def handle_start(message):
         
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-        if type(int(message.text)) == type(1):
+        if type(message.text) == type(1):
                 i = int(message.text) * 562
                 bot.send_message(message.chat.id, i)
         else:
