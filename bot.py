@@ -16,10 +16,10 @@ def handle_start(message):
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
         try:
-                i = int(message.text) * 562
-                bot.send_message(message.chat.id, str(i) + " bytes")    
+                b = int(message.text) * 0.0000004768371582
+                bot.send_message(message.chat.id, str(b) + " Gb")    
         except:
-                bot.send_message(message.chat.id, "Умею отвечать только на число!")
+                bot.send_message(message.chat.id, "Умею отвечать только на число блоков!")
             
         
         '''   
