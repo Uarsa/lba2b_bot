@@ -15,8 +15,12 @@ def handle_start(message):
         
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-        i = int(message.text) * 562
-        bot.send_message(message.chat.id, i)
+        if type(int(message.text)) == type(1):
+                i = int(message.text) * 562
+                bot.send_message(message.chat.id, i)
+        else:
+                bot.send_message(message.chat.id, "Умею отвечать только на число!")        
+                
         
         '''   
         if type(message.text) == type(1):      
@@ -24,13 +28,7 @@ def handle_text(message):
                 bot.send_message(message.chat.id, "Умею отвечать только на число!")
         '''        
         
-        '''
-         if message.text == 'пока' or message.text == 'Пока':
-                bot.send_message(message.chat.id, 'Успехов в новом году!')
-         else:
-                i = int(message.text) * 562.5
-                bot.send_message(message.chat.id, i)
-         '''       
+        
         
         
 bot.polling(none_stop=True, interval=0)    
