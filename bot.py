@@ -17,7 +17,7 @@ def handle_start(message):
 def handle_text(message):
         try:
                 i = int(message.text) * 562
-                bot.send_message(message.chat.id, i + " byte")    
+                bot.send_message(message.chat.id, str(i) + " bytes")    
         except:
                 bot.send_message(message.chat.id, "Умею отвечать только на число!")
             
