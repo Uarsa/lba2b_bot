@@ -8,7 +8,7 @@ bot = telebot.TeleBot("1174476779:AAE0zX3xf-ioir4agNdGiBHQFjObQZJBcqA")
 def handle_start(message):
         user_markup = telebot.types.ReplyKeyboardMarkup(True, True)
         user_markup.row('/start')
-        bot.send_message(message.from_user.id, "Давай начнём.\nПосто пришли номер блока.", reply_markup=user_markup)
+        bot.send_message(message.from_user.id, "Давай начнём.\nПросто пришли номер блока.", reply_markup=user_markup)
         
         
 @bot.message_handler(content_types=['text'])
