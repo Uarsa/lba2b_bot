@@ -2,9 +2,7 @@
 Telegram bot fo converting LBA to Gbytes.
 
 
-Bot name in Telegram:
-
-LBA2B
+Bot name in Telegram:\nLBA2B
 
 @Uarsa_LBAconv_bot
 
